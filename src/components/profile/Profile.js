@@ -1,34 +1,47 @@
 import PropTypes from 'prop-types';
+import { Box } from "../Box";
+import { Img, Name, Tag, Location, List, Label } from './Profile.styled';
 
 export function Profile({ username, tag, location, avatar, stats  }) {
     return (
-        <div className ="profile">
-        <div className="description">
-            <img
+        <Box className="profile"
+            width='300px'
+            ml="auto"
+            mr="auto"
+            bg="white"
+            textAlign="center"
+        >
+            <Box mb={4} p={4} className="description">
+            <Img
                 src={avatar}
                 alt="User avatar"
                 className="avatar"
             />
-            <p className="name">{username}</p>
-            <p className="tag">@{tag}</p>
-            <p className="location">{location}</p>
-        </div>
+            <Name className="name">{username}</Name>
+            <Tag className="tag">@{tag}</Tag>
+            <Location className="location">{location}</Location>
+        </Box>
 
-        <ul className="stats">
-            <li>
-                <span className="label">Followers</span>
-                <span className="quantity">{stats.followers}</span>
-            </li>
-            <li>
-                <span className="label">Views</span>
-                <span className="quantity">{stats.views}</span>
-            </li>
-            <li>
-                <span className="label">Likes</span>
-                <span className="quantity">{stats.likes}</span>
-            </li>
-        </ul>
-    </div>
+            <Box className="stats"
+                display="flex"
+                justifyContent="space-around"
+                border="normal"
+                as='ul'
+            >
+            <List>
+                <Label className="label">Followers: </Label>
+                <Box className="quantity">{stats.followers}</Box>
+            </List>
+            <List>
+                <Label className="label">Views: </Label>
+                <Box className="quantity">{stats.views}</Box>
+            </List>
+            <List>
+                <Label className="label">Likes: </Label>    
+                <Box className="quantity">{stats.likes}</Box>
+            </List>
+        </Box>
+    </Box>
     );
 };   
 
