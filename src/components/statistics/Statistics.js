@@ -9,7 +9,8 @@ export function Statistics({ title,  stats } ) {
         ml="auto"
         mr="auto"
         bg="white"
-        textAlign="center"        
+        textAlign="center"
+        boxShadow = "normal"
         as="section"
       > 
         {title && <Box className="title"

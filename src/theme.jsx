@@ -10,6 +10,7 @@ export const theme = {
     secondary: '#ebedf0',
     accent: '#609',
     muted: '#f6f6f6',
+    table: '#414441'
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {

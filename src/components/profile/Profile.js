@@ -9,6 +9,7 @@ export function Profile({ username, tag, location, avatar, stats  }) {
             ml="auto"
             mr="auto"
             bg="white"
+            boxShadow = "normal"
             textAlign="center"
         >
             <Box mb={4} p={4} className="description">
