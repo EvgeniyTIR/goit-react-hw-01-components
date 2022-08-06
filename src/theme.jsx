@@ -50,7 +50,7 @@ export const theme = {
     l: 0.2,
   },
   shadows: {
-    normal: "5px 10px #888888",
+    normal: "1px 2px 4px #888888",
     text: "1px 1px 1px black"
    }
 };

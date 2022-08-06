@@ -33,7 +33,7 @@ const App = () => {
         friends={friends}
       />
       </Box>
-      <Box bg="background" display="flex" alignItems="center" mb={6}>
+      <Box bg="background" display="flex" alignItems="center" mb={6} p={5}>
       <TransactionHistory
         items={transactions}
       />

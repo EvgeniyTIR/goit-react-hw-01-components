@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box } from "../Box";
+import { randomColor } from 'components/randomColor';
 
 export function Statistics({ title,  stats } ) {
     return (
@@ -38,10 +39,12 @@ export function Statistics({ title,  stats } ) {
               <Box className="label"
                 fontSize="m"
                 mb={3}
+                as="span"
               >{item.label}</Box>
               <Box className="percentage"
                 fontSize="mt"
                 fontWeight="bold"
+                as="span"
               >{item.percentage}%</Box>
         </Box>        
           ))}
@@ -49,9 +52,7 @@ export function Statistics({ title,  stats } ) {
 </Box>
     );
 };
-function randomColor() {
-    return "#"+ Math.floor(Math.random() * 16777215).toString(16);
-}
+
 
 Statistics.propTypes = {
   title: PropTypes.string,
