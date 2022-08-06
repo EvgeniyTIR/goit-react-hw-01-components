@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box } from "../Box";
-import { Img, Name, Tag, Location, List, Label } from './Profile.styled';
+import { Img, Name, Tag, Location, List, Label, Quantity} from './Profile.styled';
 
 export function Profile({ username, tag, location, avatar, stats  }) {
     return (
@@ -30,15 +30,15 @@ export function Profile({ username, tag, location, avatar, stats  }) {
             >
             <List>
                 <Label className="label">Followers: </Label>
-                <Box className="quantity">{stats.followers}</Box>
+                <Quantity className="quantity">{stats.followers}</Quantity>
             </List>
             <List>
                 <Label className="label">Views: </Label>
-                <Box className="quantity">{stats.views}</Box>
+                <Quantity className="quantity">{stats.views}</Quantity>
             </List>
             <List>
                 <Label className="label">Likes: </Label>    
-                <Box className="quantity">{stats.likes}</Box>
+                <Quantity className="quantity">{stats.likes}</Quantity>
             </List>
         </Box>
     </Box>

@@ -3,7 +3,7 @@ export const theme = {
     black: '#000',
     white: '#fff',
     online: '#26b226',
-    offline:'#fa383e',
+    offline: '#fa383e',
     text: '#2a2a2a',
     background: '#e6f6e6',
     primary: '#07c',
@@ -49,4 +49,8 @@ export const theme = {
     m: 0.5,
     l: 0.2,
   },
+  shadows: {
+    normal: "5px 10px #888888",
+    text: "1px 1px 1px black"
+   }
 };

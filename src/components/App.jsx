@@ -22,13 +22,13 @@ const App = () => {
           stats={user.stats}         
          />
       </Box>   
-      <Box bg="background" display="flex" alignItems="center" mb={6}>
+      <Box bg="background" display="flex" alignItems="center" mb={6} p={5}>
       <Statistics
-        title="Upload stats"
+        title="UPLOAD STATS"
         stats={data}
       />
       </Box>
-      <Box bg="background" display="flex" alignItems="center" mb={6}>
+      <Box bg="background" display="flex" alignItems="center" mb={6} p={5}>
       <FriendList
         friends={friends}
       />
