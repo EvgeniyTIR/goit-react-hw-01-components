@@ -10,7 +10,7 @@ export const theme = {
     secondary: '#ebedf0',
     accent: '#609',
     muted: '#f6f6f6',
-    table: '#414441'
+    table: '#414441',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
   fonts: {
@@ -51,7 +51,7 @@ export const theme = {
     l: 0.2,
   },
   shadows: {
-    normal: "1px 2px 4px #888888",
-    text: "1px 1px 1px black"
-   }
+    normal: '1px 2px 4px #888888',
+    text: '1px 1px 1px black',
+  },
 };

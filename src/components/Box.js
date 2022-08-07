@@ -24,5 +24,5 @@ export const Box = styled('div')(
   position,
   fontSize,
   typography,
-  shadow,
+  shadow
 );
